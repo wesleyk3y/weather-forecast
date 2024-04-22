@@ -7,17 +7,24 @@ app = Flask(__name__)
 # Get the API key from an environment variable
 api_key = os.environ.get('OPENWEATHERMAP_API_KEY')
 
-@app.route('/weather/<location>')
-def get_weather(location):
+@app.route('/weather/Auckland')
+def get_weather():
+    print("Received request for weather data for Auckland")
+    
     # make sure API key is included
     if not api_key:
+        print("API key not configured")
         return 'API key not configured', 500
 
-    # get the weather data for the specified location
-    weather_data = fetch_weather_forecast(api_key, location)
+    # get the weather data for Auckland
+    weather_data = fetch_weather_forecast(api_key, "Auckland")
+    
+    print("Weather data received:", weather_data)
     
     # format the weather data
     formatted_weather_data = format_weather_forecast(weather_data)
+    
+    print("Formatted weather data:", formatted_weather_data)
     
     # return the formatted weather data as a JSON
     return jsonify(formatted_weather_data)
