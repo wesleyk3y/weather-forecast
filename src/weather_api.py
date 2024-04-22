@@ -1,7 +1,7 @@
 import requests
 
 # get the weather forecast data
-def fetch_weather_forecast(api_key, city):
+def fetch_weather_forecast(api_key, location):
     url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={api_key}&units=metric"
     response = requests.get(url)
     data = response.json()
