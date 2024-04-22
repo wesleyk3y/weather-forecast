@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+env/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Dependency directories
+*.egg-info/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+
+# Configuration files with sensitive information
+.env
+config.ini
