@@ -1,5 +1,7 @@
+console.log("JavaScript file connected and executing!");
+
 function fetchWeatherData() {
-    fetch(`http://127.0.0.1:5000/weather/Auckland`)
+    fetch(`http://127.0.0.1:5000/`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -15,7 +17,8 @@ function fetchWeatherData() {
 }
 
 function updateWeatherInfo(weatherData) {
-    document.getElementById('location-value').textContent = weatherData.name;
+    // Skip setting the location value since it's not provided by the server
+    document.getElementById('location-value').textContent = 'Auckland';
     document.getElementById('temperature-value').textContent = `${weatherData.temperature} °C`;
     document.getElementById('description-value').textContent = weatherData.description;
     document.getElementById('humidity-value').textContent = `${weatherData.humidity}%`;

@@ -1,13 +1,16 @@
 import os
 from flask import Flask, jsonify
 from weather_api import fetch_weather_forecast, format_weather_forecast
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app) 
 
 # Get the API key from an environment variable
 api_key = os.environ.get('OPENWEATHERMAP_API_KEY')
 
-@app.route('/weather/Auckland')
+@app.route('/')
+@cross_origin()
 def get_weather():
     print("Received request for weather data for Auckland")
     
