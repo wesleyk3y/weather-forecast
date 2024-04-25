@@ -1,4 +1,4 @@
-# Weather Forecast Project
+# Weather Forecast Widget Project
 
 ## Description
 This Python project fetches real-time weather data from a weather API and provides users with accurate weather forecasts for their location. It aims to offer a seamless and informative weather forecasting experience, empowering users to plan their activities with confidence in the face of changing weather conditions. 
