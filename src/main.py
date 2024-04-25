@@ -1,7 +1,7 @@
 from weather_api import fetch_weather_forecast, format_weather_forecast
 
 def main():
-    api_key = '809c0d51ea0065551adce85fbc3fc3c1'
+    api_key = os.environ.get('OPENWEATHERMAP_API_KEY')
     location = 'Auckland'
 
     # get the weather data and format it
