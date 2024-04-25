@@ -10,9 +10,11 @@ Chose to do this as a personal project as I check the weather every morning as I
 - Displays current weather conditions and forecasted data for Auckland
 
 ## Technologies Used
-- Python 3.x
+- Python 3
 - Requests library
 - Git and GitHub
+- Flask
+- HTML/CSS + JavaScript
 
 ## Installation
 1. Clone the repository
