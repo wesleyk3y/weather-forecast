@@ -1,13 +1,13 @@
 # Weather Forecast Project
 
 ## Description
-This Python project fetches real-time weather data from a weather API and provides users with accurate weather forecasts for their location. It aims to offer a seamless and informative weather forecasting experience, empowering users to plan their activities with confidence in the face of changing weather conditions.
+This Python project fetches real-time weather data from a weather API and provides users with accurate weather forecasts for their location. It aims to offer a seamless and informative weather forecasting experience, empowering users to plan their activities with confidence in the face of changing weather conditions. 
+
+Chose to do this as a personal project as I check the weather every morning as I commute for a long period of time to get to University and need to know what to pack/wear etc. This makes it easier for me to check the weather more quickly :)
 
 ## Features
 - Fetches weather forecast data from a weather API.
-- Displays current weather conditions and forecasted data.
-- Customizable location for personalized forecasts.
-- Option to schedule and receive notifications for hourly or daily forecasts.
+- Displays current weather conditions and forecasted data for Auckland
 
 ## Technologies Used
 - Python 3.x
