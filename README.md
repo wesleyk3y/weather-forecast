@@ -19,7 +19,7 @@ Chose to do this as a personal project as I check the weather every morning as I
 ## Installation
 1. Clone the repository
 ```
-git clone https://github.com/your-username/weather-forecast.git
+git clone https://github.com/wesleyk3y/weather-forecast.git
 ```
 2. Install dependencies
 ```
